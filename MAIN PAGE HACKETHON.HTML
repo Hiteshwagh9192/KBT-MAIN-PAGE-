@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVP's KBT COE, Nashik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #003366;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0055A4;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        nav a:hover {
+            background: #002244;
+        }
+        .container {
+            padding: 20px;
+        }
+        .slideshow {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .slideshow img {
+            width: 80%;
+            max-height: 300px;
+            display: none;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .button-container a {
+            background: #0055A4;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .button-container a:hover {
+            background: #002244;
+        }
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MVP's KBT COE, Nashik</h1>
+        <p>An Autonomous Institute affiliated to Savitribai Phule Pune University</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#admission">Admission</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#contact">Contact</a>
+        <a href="https://hiteshwagh9192.github.io/college-hackathon-/kkkkkkk.html">Student Login</a>
+    </nav>
+    
+    <div class="slideshow">
+        <img src="https://media.istockphoto.com/id/525409405/photo/rear-view-of-teenage-students-raising-hands-in-classroom.jpg?s=612x612&w=0&k=20&c=iae_uTM77vK3N1J6q0Zi7kvfOTjlirp2P5MIVswbxmo=" class="slide" style="display:block;">
+        <img src="https://i.pinimg.com/originals/67/aa/95/67aa95356e2efef1ff40ed9aa95a1d66.jpg" class="slide">
+        <img src="https://t4.ftcdn.net/jpg/02/74/75/77/360_F_274757798_E6dk7D6BpSgszALncwkXxutpNyFH3JI8.jpg" class="slide">
+    </div>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About MVP</h2>
+            <p>Details about MVP, governance, and committees.</p>
+        </section>
+        
+        <section id="departments">
+            <h2>Departments</h2>
+            <p>List of engineering and management departments.</p>
+        </section>
+        
+        <section id="admission">
+            <h2>Admission</h2>
+            <p>Information about the admission process for various courses.</p>
+        </section>
+        
+        <section id="facilities">
+            <h2>Facilities</h2>
+            <p>Hostel, sports, library, and other facilities available.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Udoji Maratha Boarding Campus, Gangapur Road, Nashik-422013, Maharashtra</p>
+            <p>Phone: 0253-2571439 / 0253-2582891</p>
+            <p>Email: principal@kbtcoe.org</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 MVP's KBT COE, Nashik | All Rights Reserved</p>
+    </footer>
+    
+    <script>
+        let index = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            index++;
+            if (index > slides.length) { index = 1; }
+            slides[index - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
+</body>
+</html>
